@@ -8,7 +8,7 @@ const NotFoundPage: React.FC = () => {
     <Result
       status="404"
       title="404"
-      subTitle="Sorry, the page you're looking for it doesn't exist"
+      subTitle="Sorry, the page you're looking for doesn't exist"
       extra={(
         <StyledButton type="primary" onClick={() => navigate('/')}>
           Back to home
