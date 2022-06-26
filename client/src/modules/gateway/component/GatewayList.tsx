@@ -37,7 +37,12 @@ export default function GatewayList({ gatewayList }: GatewayListI) {
       render: (_, { _id }) => (
         <Space size="middle">
           <Tooltip title="Detail">
-            <Button type="primary" shape="circle" icon={<EyeOutlined />} onClick={() => navigate(`/gateway/${_id}`)} />
+            <Button
+              type="primary"
+              shape="circle"
+              icon={<EyeOutlined />}
+              onClick={() => navigate(`/gateway/${_id}`)}
+            />
           </Tooltip>
         </Space>
       ),

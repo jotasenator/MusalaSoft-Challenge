@@ -60,9 +60,9 @@ const HandleDeleteOption = ({ id, onDeleteDevice }:IHandleDeleteOptionProps) => 
 
   const showDeleteConfirm = () => {
     confirm({
-      title: 'Are you sure delete this device?',
+      title: 'Are you sure to delete this device?',
       icon: <ExclamationCircleOutlined />,
-      content: 'If you remove it you can revert this action',
+      content: 'If you remove it you can not revert this action',
       okText: 'Yes',
       okType: 'danger',
       cancelText: 'No',
@@ -83,7 +83,7 @@ const HandleDeleteOption = ({ id, onDeleteDevice }:IHandleDeleteOptionProps) => 
 
   return (
     <Space size="middle">
-      <Tooltip title="Detail">
+      <Tooltip title="Delete">
         <Button
           loading={loading}
           type="primary"
